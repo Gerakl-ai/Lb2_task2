@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>2 задание</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #e6e6e6;
+        }
+
+        .todo {
+            width: 720px;
+            margin: 40px auto;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            position: relative;
+            padding: 15px 70px 15px 60px;
+            font-size: 18px;
+        }
+
+        .color1 {
+            background: #a7c9d6;
+        }
+
+        .color2 {
+            background: #9fc3cf;
+        }
+
+        li::before {
+            content: "";
+            position: absolute;
+            left: 18px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 22px;
+            height: 22px;
+            background-image: url("checkbox.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        li::after {
+            content: "";
+            position: absolute;
+            left: 240px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 14px;
+            height: 14px;
+            background-image: url("cross.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        .done {
+            background: white;
+            text-decoration: line-through;
+        }
+
+            .done::before {
+                background-image: url("checked.png");
+            }
+    </style>
+</head>
+
+<body>
+
+    <div class="todo">
+
+        <h1>My To Do List</h1>
+
+        <ul>
+
+            <li class="color1">Качатся</li>
+            <li class="color2 done">Проснутся</li>
+            <li class="color1">Бегит</li>
+            <li class="color2">Анжумания</li>
+            <li class="color1 done">Дойти до ВлГУ</li>
+            <li class="color2">Купить лабуба</li>
+            <li class="color1">Набор массы</li>
+            <li class="color2">Протеин есть</li>
+            <li class="color1">Прэсс качат</li>
+            <li class="color2">Купит мяса</li>
+            <li class="color1 done">Улыбнутся</li>
+            <li class="color2">Скакалка скакать</li>
+
+        </ul>
+
+    </div>
+
+</body>
+</html>
